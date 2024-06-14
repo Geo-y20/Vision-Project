@@ -65,7 +65,7 @@ The Vision Project is a comprehensive computer vision application designed to as
 
 2. **Install the required dependencies:**
    ```bash
-   pip install -r requirements.txt
+   pip install -r vision.txt
    ```
 
 3. **Run the Flask application:**
@@ -81,14 +81,9 @@ The Vision Project is a comprehensive computer vision application designed to as
    cd Vision-Project
    ```
 
-2. **Install the required dependencies:**
-   ```bash
-   pip install -r requirements_pi.txt
-   ```
+2. **Ensure the Raspberry Pi environment is correctly set up with all necessary packages installed.**
 
-3. **Ensure the Raspberry Pi environment is correctly set up with all necessary packages installed.**
-
-4. **Run the scripts:**
+3. **Run the scripts:**
 
    - **camera.py:** Check for camera functionality.
      ```bash
