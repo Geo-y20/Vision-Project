@@ -138,10 +138,10 @@ Check out this video demonstration of the Vision Project in action:
 YOLOv5 (You Only Look Once) is used for real-time object detection. For more details on YOLOv5, visit the [Roboflow blog](https://blog.roboflow.com/yolov5-improvements-and-evaluation/) and the [COCO dataset](https://cocodataset.org/#home).
 
 ### Precision and Recall Equations
-- **Precision:** \( \text{Precision} = \frac{TP}{TP + FP} \)
+- **Precision:** TP/TP+FP
   - TP: True Positives
   - FP: False Positives
-- **Recall:** \( \text{Recall} = \frac{TP}{TP + FN} \)
+- **Recall:** TP/TP+FN
   - TP: True Positives
   - FN: False Negatives
 
