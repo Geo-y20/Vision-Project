@@ -1,12 +1,9 @@
-Here is the updated and detailed README file for your Vision Project, including the details for Raspberry Pi and the camera module:
-
----
 
 # Vision Project
 
 ## Overview
 
-The Vision Project is a comprehensive computer vision application designed to assist visually impaired individuals by leveraging advanced technologies for object detection, optical character recognition (OCR), and face recognition. Developed by secondary stage students Janaabdelfatah and Romaysa, this project was part of their participation in the Genius Olympiad.
+The Vision Project is a comprehensive computer vision application designed to assist visually impaired individuals by leveraging advanced technologies for object detection, optical character recognition (OCR), and face recognition. Developed by secondary stage students Janaabdelfatah and Romaysa Gomaa, this project was part of their participation in the Genius Olympiad.
 
 ## Features
 
