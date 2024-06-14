@@ -1,10 +1,17 @@
 
-
 # Vision Project
 
 ## Overview
 
 The Vision Project is a comprehensive computer vision application designed to assist visually impaired individuals by leveraging advanced technologies for object detection, optical character recognition (OCR), and face recognition. Developed by secondary stage students Janaabdelfatah and Romaysa, this project was part of their participation in the Genius Olympiad.
+
+## Video Demonstration
+
+Check out this video demonstration of the Vision Project in action:
+    
+<video src="https://github.com/Geo-y20/Vision-Project/raw/main/Final-obj-ocr-face-project.mp4" controls="controls" style="max-width: 100%; height: auto;">
+    Your browser does not support the video tag.
+</video>
 
 ## Features
 
@@ -226,9 +233,10 @@ The Vision Project follows a systematic approach to ensure the highest performan
 
 This project was collaboratively developed by the following contributors:
 
-- **George Youhana** - [g.ghaly0451@student.aast.edu](mailto:g.ghaly0451@student.aast.edu)
-- **Mostafa Magdy** - [Mustafa.10770@stemredsea.moe.edu.eg](mailto:Mustafa.10770@stemredsea.moe.edu.eg)
+- **George Youhana
 
+** - [g.ghaly0451@student.aast.edu](mailto:g.georgeyouhana2@gmail.com)
+- **Mostafa Magdy** - [Mustafa.10770@stemredsea.moe.edu.eg](mailto:Mustafa.10770@stemredsea.moe.edu.eg)
 - **Abdallah Alkhouly** - [a.alkholy53@student.aast.edu](mailto:a.alkholy53@student.aast.edu)
 - **Mohamed Hany Sallam** - [m.h.sallam1@student.aast.edu](mailto:m.h.sallam1@student.aast.edu)
 
@@ -241,4 +249,3 @@ You can access the project files here: [raspberry pi.rar](https://github.com/Geo
 ## Contact
 
 For any inquiries or further information, please contact the contributors via their provided email addresses.
-
