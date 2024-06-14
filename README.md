@@ -227,9 +227,8 @@ The Vision Project follows a systematic approach to ensure the highest performan
 This project was collaboratively developed by the following contributors:
 
 - **George Youhana** - [g.ghaly0451@student.aast.edu](mailto:g.ghaly0451@student.aast.edu)
-- **Mostafa Magdy** - [Mustafa.10770@stemredsea.moe.edu.eg](mailto:Mustafa.10770@stemredsea.m
+- **Mostafa Magdy** - [Mustafa.10770@stemredsea.moe.edu.eg](mailto:Mustafa.10770@stemredsea.moe.edu.eg)
 
-oe.edu.eg)
 - **Abdallah Alkhouly** - [a.alkholy53@student.aast.edu](mailto:a.alkholy53@student.aast.edu)
 - **Mohamed Hany Sallam** - [m.h.sallam1@student.aast.edu](mailto:m.h.sallam1@student.aast.edu)
 
@@ -237,7 +236,7 @@ Janaabdelfatah and Romaysa, two girls in the secondary stage, competed in the Ge
 
 ## Access the Project
 
-You can access the project files here: [raspberry pi.rar](path_to_your_raspberry_pi.rar)
+You can access the project files here: [raspberry pi.rar](https://github.com/Geo-y20/Vision-Project/blob/main/raspberry%20pi.rar)
 
 ## Contact
 
