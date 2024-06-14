@@ -7,9 +7,14 @@ The Vision Project is a comprehensive computer vision application designed to as
 
 ## Video Demonstration
 
+## Version Working on Raspberry Pi
 Check out this video demonstration of the Vision Project in action:
     
 [![Vision Project Video](https://github.com/Geo-y20/Vision-Project/blob/main/thumbnail.JPG)](https://github.com/Geo-y20/Vision-Project/blob/main/Final-obj-ocr-face-project.mp4)
+
+## Version Working on Laptop
+[![Vision Project Video](https://github.com/Geo-y20/Vision-Project/blob/main/capture.JPG)](https://github.com/Geo-y20/Vision-Project/blob/main/First%20Trial.mp4)
+
 
 ## Features
 
