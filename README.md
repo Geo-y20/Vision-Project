@@ -9,9 +9,7 @@ The Vision Project is a comprehensive computer vision application designed to as
 
 Check out this video demonstration of the Vision Project in action:
     
-<video src="https://github.com/Geo-y20/Vision-Project/raw/main/Final-obj-ocr-face-project.mp4" controls="controls" style="max-width: 100%; height: auto;">
-    Your browser does not support the video tag.
-</video>
+[![Vision Project Video](https://github.com/Geo-y20/Vision-Project/assets/VIDEO_ID/thumbnail.jpg)](https://github.com/Geo-y20/Vision-Project/assets/VIDEO_ID/video.mp4)
 
 ## Features
 
@@ -233,9 +231,9 @@ The Vision Project follows a systematic approach to ensure the highest performan
 
 This project was collaboratively developed by the following contributors:
 
-- **George Youhana
+- **George Youhana** - [g.ghaly0451@student.a
 
-** - [g.ghaly0451@student.aast.edu](mailto:g.georgeyouhana2@gmail.com)
+ast.edu](mailto:g.georgeyouhana2@gmail.com)
 - **Mostafa Magdy** - [Mustafa.10770@stemredsea.moe.edu.eg](mailto:Mustafa.10770@stemredsea.moe.edu.eg)
 - **Abdallah Alkhouly** - [a.alkholy53@student.aast.edu](mailto:a.alkholy53@student.aast.edu)
 - **Mohamed Hany Sallam** - [m.h.sallam1@student.aast.edu](mailto:m.h.sallam1@student.aast.edu)
