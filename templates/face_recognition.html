@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 2px -2px gray;
+        }
+
+        .container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h3, p {
+            color: #007bff;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border: none;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index') }}">Vision Companion</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('object_detection') }}">Object Detection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('ocr') }}">OCR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('face_recognition_page') }}">Face Recognition</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="text-center my-4">Face Recognition</h1>
+        <div class="row">
+            <div class="col text-center">
+                <form action="{{ url_for('collect_face_data') }}" method="get">
+                    <button type="submit" class="btn btn-success btn-lg">Collect Face Data</button>
+                </form>
+                <form action="{{ url_for('face_recognition_page') }}">
+                    <button type="submit" class="btn btn-warning btn-lg mt-2">Recognize Faces</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col text-center">
+                <h3>Camera Feed</h3>
+                <img src="{{ url_for('face_recognition_feed') }}" style="width: 100%;" />
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

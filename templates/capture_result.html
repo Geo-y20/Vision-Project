@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Result</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Vision Companion</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('object_detection') }}">Object Detection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('ocr') }}">OCR</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="text-center my-4">Detection Result</h1>
+        <div class="text-center">
+            {% if image_path %}
+            <img src="{{ url_for('static', filename=image_path) }}" class="img-fluid" />
+            {% else %}
+            <p>No image captured.</p>
+            {% endif %}
+        </div>
+        <div class="text-center my-4">
+            <p>Detected Objects: {{ objects }}</p>
+        </div>
+        <div class="text-center my-4">
+            <form action="{{ url_for('object_detection') }}" method="get">
+                <input type="submit" value="Back to Object Detection" class="btn btn-secondary">
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand,
+        .nav-link {
+            color: #ffffff;
+        }
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #cccccc;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .btn-play {
+            background-color: #28a745;
+        }
+        .btn-play:hover {
+            background-color: #218838;
+        }
+        .btn-stop {
+            background-color: #dc3545;
+        }
+        .btn-stop:hover {
+            background-color: #c82333;
+        }
+        .btn-back {
+            background-color: #6c757d;
+        }
+        .btn-back:hover {
+            background-color: #5a6268;
+        }
+        .card-body {
+            text-align: left;
+            font-size: 1.2em;
+        }
+        .search-box {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="{{ url_for('index') }}">Vision Companion</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('object_detection') }}">Object Detection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('ocr') }}">OCR</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="text-center my-4">OCR Result</h1>
+        <div class="text-center">
+            <img src="{{ url_for('static', filename='uploads/' + image) }}" class="img-fluid" />
+        </div>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search..." class="form-control">
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text" id="ocrText">{{ text }}</p>
+            </div>
+        </div>
+        <div class="text-center my-4">
+            <button id="copyBtn" class="btn btn-custom">Copy to Clipboard</button>
+            <form action="{{ url_for('play_audio') }}" method="post" class="d-inline">
+                <input type="hidden" name="text" value="{{ text }}">
+                <button type="submit" class="btn btn-custom btn-play">Play Text as Speech</button>
+            </form>
+            <form action="{{ url_for('stop_audio_route') }}" method="post" class="d-inline">
+                <button type="submit" class="btn btn-custom btn-stop">Stop Audio</button>
+            </form>
+        </div>
+        <div class="text-center my-4">
+            <a href="{{ url_for('ocr') }}" class="btn btn-custom btn-back">Back</a>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('copyBtn').addEventListener('click', function () {
+            var text = document.getElementById('ocrText').innerText;
+            navigator.clipboard.writeText(text).then(function () {
+                alert('Text copied to clipboard');
+            }).catch(function (error) {
+                alert('Error in copying text: ' + error);
+            });
+        });
+
+        document.getElementById('search').addEventListener('keyup', function () {
+            var searchQuery = this.value.toLowerCase();
+            var text = document.getElementById('ocrText');
+            var textValue = text.innerText.toLowerCase();
+            if (textValue.includes(searchQuery)) {
+                var index = textValue.indexOf(searchQuery);
+                var highlightedText = '<span style="background-color: yellow;">' + text.innerText.substr(index, searchQuery.length) + '</span>';
+                text.innerHTML = text.innerText.substr(0, index) + highlightedText + text.innerText.substr(index + searchQuery.length);
+            } else {
+                text.innerHTML = text.innerText;
+            }
+        });
+    </script>
+</body>
+</html>
