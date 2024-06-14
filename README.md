@@ -3,7 +3,7 @@
 
 ## Overview
 
-The Vision Project is a comprehensive computer vision application designed to assist visually impaired individuals by leveraging advanced technologies for object detection, optical character recognition (OCR), and face recognition. Developed by secondary stage students Janaabdelfatah and Romaysa, this project was part of their participation in the Genius Olympiad.
+The Vision Project is a comprehensive computer vision application designed to assist visually impaired individuals by leveraging advanced technologies for object detection, optical character recognition (OCR), and face recognition. Idea by secondary stage students Janaabdelfatah and Romaysa, this project was part of their participation in the Genius Olympiad.
 
 ## Video Demonstration
 
@@ -231,9 +231,7 @@ The Vision Project follows a systematic approach to ensure the highest performan
 
 This project was collaboratively developed by the following contributors:
 
-- **George Youhana** - [g.ghaly0451@student.a
-
-ast.edu](mailto:g.georgeyouhana2@gmail.com)
+- **George Youhana** - [georgeyouhana2@gmail.com](mailto:georgeyouhana2@gmail.com)
 - **Mostafa Magdy** - [Mustafa.10770@stemredsea.moe.edu.eg](mailto:Mustafa.10770@stemredsea.moe.edu.eg)
 - **Abdallah Alkhouly** - [a.alkholy53@student.aast.edu](mailto:a.alkholy53@student.aast.edu)
 - **Mohamed Hany Sallam** - [m.h.sallam1@student.aast.edu](mailto:m.h.sallam1@student.aast.edu)
