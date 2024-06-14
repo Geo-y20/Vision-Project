@@ -7,9 +7,12 @@ The Vision Project is a comprehensive computer vision application designed to as
 
 ## Video Demonstration
 
+
+
 Check out this video demonstration of the Vision Project in action:
     
-[![Vision Project Video](https://github.com/Geo-y20/Vision-Project/assets/VIDEO_ID/thumbnail.jpg)](https://github.com/Geo-y20/Vision-Project/assets/VIDEO_ID/video.mp4)
+[![Vision Project Video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://github.com/Geo-y20/Vision-Project/blob/main/Final-obj-ocr-face-project.mp4)
+
 
 ## Features
 
